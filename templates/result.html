@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Certificate Verification</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+    {% if certificate %}
+        <div class="card shadow-lg border-success">
+            <div class="card-header bg-success text-white">
+                ✅ Certificate Verified
+            </div>
+            <div class="card-body">
+                <h5 class="card-title text-primary">🎓 {{ certificate.student_name }}</h5>
+                <p><strong>ID:</strong> {{ certificate.certificate_id }}</p>
+                <p><strong>Course:</strong> {{ certificate.course }}</p>
+                <p><strong>Date:</strong> {{ certificate.issue_date }}</p>
+                <p><strong>Institution:</strong> {{ certificate.institution }}</p>
+                <p><strong>Status:</strong> 
+                    <span class="badge bg-success">{{ certificate.status }}</span>
+                </p>
+            </div>
+            <div class="card-footer text-muted">
+                Verified via QR Code
+            </div>
+        </div>
+    {% else %}
+        <div class="alert alert-danger mt-5">
+            ❌ Certificate not found. Please check the Certificate ID.
+        </div>
+    {% endif %}
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

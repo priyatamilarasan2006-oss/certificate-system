@@ -1,0 +1,6 @@
+certificate_id,	student_name,course,issue_date,institution,status,email
+2224127006,	hari,bca,2/3/2027,ananda clg,valid,hari11@gmail.com
+2224127006,	hari,bca,2/3/2027,ananda clg,valid,hari11@gmail.com
+2224127002,vijay,bba,7/10/2026,abc,fake,vijay23@gmail.com
+2224127010,raja	,bca,5/5/2027,alagappa,revoked,rajaaa2@gmail.com
+2224123008,meenu,cs,4/12/2026,idhaya,fake,meenu25@gmail.com
