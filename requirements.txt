@@ -1,5 +1,1 @@
-Flask
-Pillow
-pytesseract
-qrcode
-pandas
+gunicorn
